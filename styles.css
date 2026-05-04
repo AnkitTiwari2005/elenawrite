@@ -151,8 +151,8 @@ nav.scrolled {
 .nav-brand:hover .nav-brand-text{opacity:.8}
 .logo-mark{width:32px;height:32px;flex-shrink:0;transition:transform .4s var(--transition),filter .3s;filter:drop-shadow(0 0 4px rgba(200,169,110,0.3))}
 .nav-brand:hover .logo-mark{transform:rotate(-6deg) scale(1.1);filter:drop-shadow(0 0 10px rgba(200,169,110,0.65))}
-.nav-logo{width:36px;height:36px;object-fit:contain;mix-blend-mode:screen;filter:drop-shadow(0 0 6px rgba(200,169,110,0.4));transition:transform .4s var(--transition),filter .3s;flex-shrink:0}
-.nav-brand:hover .nav-logo{transform:rotate(-5deg) scale(1.08);filter:drop-shadow(0 0 10px rgba(200,169,110,0.7))}
+.nav-logo{width:40px;height:40px;object-fit:contain;mix-blend-mode:screen;filter:brightness(1.1) drop-shadow(0 0 6px rgba(200,169,110,0.5));transition:transform .4s var(--transition),filter .3s;flex-shrink:0}
+.nav-brand:hover .nav-logo{transform:rotate(-6deg) scale(1.12);filter:brightness(1.2) drop-shadow(0 0 14px rgba(200,169,110,0.8))}
 .nav-brand-text{font-family:var(--serif);font-size:1.15rem;font-weight:500;color:var(--offwhite);transition:opacity .3s}
 .nav-brand-text .gold{color:var(--gold)}
 
