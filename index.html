@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>E. Trenchburg Writes | Premium Content Writing & Editorial Agency</title>
+<meta name="description" content="E. Trenchburg Writes — a premium content writing and editorial agency. Words crafted with purpose, wielded with precision.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=Playfair+Display:ital,wght@1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- CUSTOM CURSOR -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-follower" id="cursorFollower"></div>
+
+<!-- SCROLL PROGRESS BAR -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- NAV -->
+<nav id="mainNav">
+  <a href="#hero" class="nav-brand">
+    <div class="logo-mark" aria-hidden="true">
+      <svg width="32" height="32" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M30 72 Q10 72 10 52 Q10 28 35 20 L55 14" stroke="#c8a96e" stroke-width="7" stroke-linecap="round" fill="none"/>
+        <path d="M28 52 L52 52" stroke="#c8a96e" stroke-width="6" stroke-linecap="round"/>
+        <path d="M35 20 L60 14 L72 6" stroke="#c8a96e" stroke-width="6" stroke-linecap="round" fill="none"/>
+        <polygon points="72,6 82,2 88,12 76,18" fill="#c8a96e"/>
+        <circle cx="80" cy="9" r="3" fill="#0a0a0a"/>
+      </svg>
+    </div>
+    <span class="nav-brand-text">E. <span class="gold">Trenchburg</span> Writes</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#story" data-nav>Story</a></li>
+    <li><a href="#services" data-nav>Services</a></li>
+    <li><a href="#whyus" data-nav>Advantage</a></li>
+    <li><a href="#work" data-nav>Work</a></li>
+    <li><a href="#team" data-nav>Team</a></li>
+    <li><a href="#process" data-nav>Process</a></li>
+  </ul>
+  <a href="mailto:elenawrite04@gmail.com" class="nav-cta magnetic" id="navCta">Get in Touch</a>
+  <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mobile-menu-bg"></div>
+  <ul>
+    <li><a href="#story" class="mobile-link">Story</a></li>
+    <li><a href="#services" class="mobile-link">Services</a></li>
+    <li><a href="#whyus" class="mobile-link">Advantage</a></li>
+    <li><a href="#work" class="mobile-link">Work</a></li>
+    <li><a href="#team" class="mobile-link">Team</a></li>
+    <li><a href="#process" class="mobile-link">Process</a></li>
+    <li><a href="mailto:elenawrite04@gmail.com" class="mobile-link gold">elenawrite04@gmail.com</a></li>
+  </ul>
+</div>
+
+<!-- HERO -->
+<section id="hero" style="padding-top:80px">
+  <canvas id="noiseCanvas"></canvas>
+  <!-- Floating orbs -->
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+  <div class="hero-bg-text" aria-hidden="true">ETW</div>
+  <div class="hero-inner">
+    <p class="hero-eyebrow">W H E R E &nbsp;&nbsp; W O R D S &nbsp;&nbsp; B E C O M E &nbsp;&nbsp; L E G A C Y</p>
+    <h1 class="hero-headline">
+      <span class="line-mask"><span class="line-inner">The Art of</span></span>
+      <span class="line-mask"><span class="line-inner serif-italic gold-text">Exceptional</span></span>
+      <span class="line-mask"><span class="line-inner">Writing</span></span>
+    </h1>
+    <p class="hero-sub reveal-fade">"Content is not merely written — it is crafted,<br>refined, and wielded with purpose."</p>
+    <p class="hero-attr reveal-fade">— Elena Trenchburg, Founder &amp; CEO</p>
+    <div class="hero-cta-wrap reveal-fade">
+      <a href="mailto:elenawrite04@gmail.com" class="btn-primary magnetic" id="heroCta">
+        <span class="btn-text">Start a Project</span>
+        <span class="btn-arrow">→</span>
+      </a>
+      <a href="#story" class="btn-ghost">Discover More</a>
+    </div>
+    <div class="hero-trust reveal-fade">
+      <span class="trust-item"><span class="trust-dot"></span>2+ Years of Excellence</span>
+      <span class="trust-sep">·</span>
+      <span class="trust-item"><span class="trust-dot"></span>6-Member Expert Team</span>
+      <span class="trust-sep">·</span>
+      <span class="trust-item"><span class="trust-dot"></span>100% Quality Guarantee</span>
+    </div>
+  </div>
+  <!-- Scroll hint -->
+  <a href="#story" class="scroll-down-hint">
+    <span class="scroll-mouse"><span class="scroll-wheel"></span></span>
+    <span class="scroll-label">Scroll</span>
+  </a>
+  <!-- Marquee ticker -->
+  <div class="hero-ticker">
+    <div class="ticker-track">
+      <span>Editorial Excellence&nbsp;·&nbsp;</span>
+      <span>Authentic Voice&nbsp;·&nbsp;</span>
+      <span>Research-Driven&nbsp;·&nbsp;</span>
+      <span>Crafted with Purpose&nbsp;·&nbsp;</span>
+      <span>Premium Content&nbsp;·&nbsp;</span>
+      <span>Est. 2024&nbsp;·&nbsp;</span>
+      <span>Editorial Excellence&nbsp;·&nbsp;</span>
+      <span>Authentic Voice&nbsp;·&nbsp;</span>
+      <span>Research-Driven&nbsp;·&nbsp;</span>
+      <span>Crafted with Purpose&nbsp;·&nbsp;</span>
+      <span>Premium Content&nbsp;·&nbsp;</span>
+      <span>Est. 2024&nbsp;·&nbsp;</span>
+    </div>
+  </div>
+</section>
+
+<!-- STORY -->
+<section id="story" class="section">
+  <div class="container">
+    <div class="ghost-number" aria-hidden="true">01</div>
+    <div class="section-header">
+      <span class="label fade-up">01 &nbsp;·&nbsp; Our Story</span>
+      <h2 class="split-heading fade-up">Built on a Belief<br>That Words Matter</h2>
+    </div>
+    <div class="story-grid">
+      <div class="story-text fade-up">
+        <p>E. Trenchburg Writes was born from a simple but profound conviction: that exceptional writing is not a luxury — it is a necessity. In a world saturated with noise, we exist to create signal.</p>
+        <br>
+        <p>Every piece we produce is approached with editorial rigour, strategic intent, and an unwavering respect for language. We don't merely fill pages — we shape narratives that endure long after the scroll.</p>
+        <br>
+        <p>Founded by Elena Trenchburg in 2024, the agency has grown into a tight-knit team united by craft. We serve brands that refuse to settle for mediocre communication — partnering with them to build voices that resonate, convert, and stand the test of time.</p>
+        <a href="mailto:elenawrite04@gmail.com" class="story-link fade-up">
+          <span>Work with us</span>
+          <span class="story-link-arrow">→</span>
+        </a>
+      </div>
+      <div class="stat-cards">
+        <div class="stat-card fade-up" data-delay="0">
+          <div class="stat-card-accent"></div>
+          <div class="stat-num counter" data-target="2">0</div>
+          <div class="stat-suffix">+ Years</div>
+          <div class="stat-label">Editorial Excellence</div>
+        </div>
+        <div class="stat-card fade-up" data-delay="1">
+          <div class="stat-card-accent"></div>
+          <div class="stat-num counter" data-target="6">0</div>
+          <div class="stat-suffix">&nbsp;Members</div>
+          <div class="stat-label">Dedicated Team</div>
+        </div>
+        <div class="stat-card fade-up" data-delay="2">
+          <div class="stat-card-accent"></div>
+          <div class="stat-num counter" data-target="100">0</div>
+          <div class="stat-suffix">%</div>
+          <div class="stat-label">Commitment to Quality</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="section dark-alt">
+  <div class="container">
+    <div class="section-header">
+      <span class="label fade-up">02 &nbsp;·&nbsp; What We Do</span>
+      <h2 class="split-heading fade-up">Services Crafted for<br>Discerning Brands</h2>
+    </div>
+    <div class="services-grid">
+      <div class="svc-card-new fade-up" data-delay="0">
+        <div class="svc-card-top">
+          <span class="svc-num">01</span>
+          <div class="svc-icon">✦</div>
+        </div>
+        <h3 class="svc-title">Editorial &amp; Long-Form Content</h3>
+        <p class="svc-desc">In-depth articles, essays, and thought leadership pieces that position your brand as an authoritative voice. Every word earns its place.</p>
+        <div class="svc-tags">ARTICLES &nbsp;·&nbsp; ESSAYS &nbsp;·&nbsp; FEATURES</div>
+        <div class="svc-hover-line"></div>
+      </div>
+      <div class="svc-card-new fade-up" data-delay="1">
+        <div class="svc-card-top">
+          <span class="svc-num">02</span>
+          <div class="svc-icon">◈</div>
+        </div>
+        <h3 class="svc-title">Brand Copywriting</h3>
+        <p class="svc-desc">Compelling web copy, brand narratives, and messaging frameworks that convert visitors into loyal advocates. Your voice, at its absolute best.</p>
+        <div class="svc-tags">WEB COPY &nbsp;·&nbsp; BRAND VOICE &nbsp;·&nbsp; TAGLINES</div>
+        <div class="svc-hover-line"></div>
+      </div>
+      <div class="svc-card-new fade-up" data-delay="2">
+        <div class="svc-card-top">
+          <span class="svc-num">03</span>
+          <div class="svc-icon">◉</div>
+        </div>
+        <h3 class="svc-title">Content Strategy &amp; Blogs</h3>
+        <p class="svc-desc">Research-driven blog content and editorial calendars designed to grow organic reach and sustain meaningful audience engagement over time.</p>
+        <div class="svc-tags">BLOGS &nbsp;·&nbsp; SEO &nbsp;·&nbsp; STRATEGY</div>
+        <div class="svc-hover-line"></div>
+      </div>
+      <div class="svc-card-new fade-up" data-delay="3">
+        <div class="svc-card-top">
+          <span class="svc-num">04</span>
+          <div class="svc-icon">⬡</div>
+        </div>
+        <h3 class="svc-title">Editing &amp; Refinement</h3>
+        <p class="svc-desc">Rigorous editorial review, structural refinement, and surgical polish that elevates good writing into exceptional, publication-ready communication.</p>
+        <div class="svc-tags">EDITING &nbsp;·&nbsp; PROOFREADING &nbsp;·&nbsp; POLISH</div>
+        <div class="svc-hover-line"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section id="whyus" class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="label fade-up">03 &nbsp;·&nbsp; The Advantage</span>
+      <h2 class="split-heading fade-up">Why the World's Best<br>Brands Choose Us</h2>
+    </div>
+    <div class="adv-grid">
+      <div class="adv-block fade-up" data-delay="0">
+        <div class="adv-num">01</div>
+        <div class="adv-rule"></div>
+        <h3>Uncompromising Quality</h3>
+        <p>Every deliverable passes through multiple editorial layers before it reaches you. We hold each word to the standard we'd hold a published work — because your brand deserves nothing less than perfection.</p>
+      </div>
+      <div class="adv-block fade-up" data-delay="1">
+        <div class="adv-num">02</div>
+        <div class="adv-rule"></div>
+        <h3>Authentic Voice, Always</h3>
+        <p>We don't impose a template. We listen, research, and immerse ourselves in your brand until your voice becomes second nature — returning it to you at its finest, most compelling iteration.</p>
+      </div>
+      <div class="adv-block fade-up" data-delay="2">
+        <div class="adv-num">03</div>
+        <div class="adv-rule"></div>
+        <h3>A Team, Not a Tool</h3>
+        <p>You're not handed to an algorithm. You work with a consistent team who understands your goals, remembers your context, and genuinely cares about your outcomes — every single time.</p>
+      </div>
+      <div class="adv-block fade-up" data-delay="3">
+        <div class="adv-num">04</div>
+        <div class="adv-rule"></div>
+        <h3>Research-Driven Depth</h3>
+        <p>Surface-level content is the enemy of trust. Every piece is grounded in genuine research, industry insight, and strategic intent — producing work that educates as powerfully as it persuades.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED WORK / TESTIMONIALS -->
+<section id="work" class="section dark-alt">
+  <div class="container">
+    <div class="section-header">
+      <span class="label fade-up">04 &nbsp;·&nbsp; Voices of Trust</span>
+      <h2 class="split-heading fade-up">What Our Clients<br>Say About Us</h2>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial-card fade-up" data-delay="0">
+        <div class="quote-mark">"</div>
+        <p class="testimonial-text">Elena's team transformed our brand voice entirely. The long-form content they produced drove a 40% increase in organic traffic within two months.</p>
+        <div class="testimonial-author">
+          <div class="author-initials">RK</div>
+          <div>
+            <div class="author-name">Rohan Khanna</div>
+            <div class="author-role">Founder, Meridian Labs</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card fade-up" data-delay="1">
+        <div class="quote-mark">"</div>
+        <p class="testimonial-text">Precision, professionalism, and an editorial eye I've never encountered elsewhere. Every deliverable arrived ahead of schedule, polished to perfection.</p>
+        <div class="testimonial-author">
+          <div class="author-initials">SV</div>
+          <div>
+            <div class="author-name">Sanya Verma</div>
+            <div class="author-role">CMO, Vantage Digital</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card fade-up" data-delay="2">
+        <div class="quote-mark">"</div>
+        <p class="testimonial-text">Working with E. Trenchburg Writes felt like having a world-class editorial department in-house. Worth every rupee, without exception.</p>
+        <div class="testimonial-author">
+          <div class="author-initials">AM</div>
+          <div>
+            <div class="author-name">Arjun Mehta</div>
+            <div class="author-role">CEO, Strata Ventures</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Featured Quote Banner -->
+    <div class="quote-banner fade-up">
+      <div class="quote-banner-line"></div>
+      <blockquote class="quote-banner-text">
+        "Words are the architecture of trust.<br>
+        <em>We build structures that stand.</em>"
+      </blockquote>
+      <div class="quote-banner-line"></div>
+    </div>
+  </div>
+</section>
+
+<!-- TEAM -->
+<section id="team" class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="label fade-up">05 &nbsp;·&nbsp; The Team</span>
+      <h2 class="split-heading fade-up">The Minds Behind<br>Every Masterpiece</h2>
+    </div>
+    <div class="team-grid">
+      <div class="member-card fade-up tilt-card" data-delay="0">
+        <div class="member-card-glow"></div>
+        <div class="member-initials">ET</div>
+        <div class="member-name">Elena Trenchburg</div>
+        <div class="member-tenure">2 Years with the Agency</div>
+        <div class="member-role">Founder &amp; CEO</div>
+        <p class="member-bio">The vision and voice behind E. Trenchburg Writes. Elena leads with editorial precision and a relentless belief that every word must earn its place.</p>
+        <div class="member-tags">
+          <span>Strategy</span><span>Vision</span><span>Editorial</span>
+        </div>
+      </div>
+      <div class="member-card fade-up tilt-card" data-delay="1">
+        <div class="member-card-glow"></div>
+        <div class="member-initials">PR</div>
+        <div class="member-name">Pratikyuksh</div>
+        <div class="member-tenure">1 Year with the Agency</div>
+        <div class="member-role">Head Editor</div>
+        <p class="member-bio">The guardian of quality across all output. Pratikyuksh ensures every piece meets the agency's exacting editorial standards before it reaches a client.</p>
+        <div class="member-tags">
+          <span>Editing</span><span>Quality</span><span>Standards</span>
+        </div>
+      </div>
+      <div class="member-card fade-up tilt-card" data-delay="2">
+        <div class="member-card-glow"></div>
+        <div class="member-initials">SM</div>
+        <div class="member-name">Samaira</div>
+        <div class="member-tenure">1 Year with the Agency</div>
+        <div class="member-role">Editor</div>
+        <p class="member-bio">A meticulous editor with a sharp eye for narrative flow and structural clarity. Samaira brings balance and cohesion to every manuscript she touches.</p>
+        <div class="member-tags">
+          <span>Narrative</span><span>Flow</span><span>Structure</span>
+        </div>
+      </div>
+      <div class="member-card fade-up tilt-card" data-delay="3">
+        <div class="member-card-glow"></div>
+        <div class="member-initials">MJ</div>
+        <div class="member-name">Mrityunjay</div>
+        <div class="member-tenure">5 Months with the Agency</div>
+        <div class="member-role">Content Writer</div>
+        <p class="member-bio">A researcher at heart, Mrityunjay delivers content with analytical depth and a compelling narrative voice across even the most complex topics.</p>
+        <div class="member-tags">
+          <span>Research</span><span>Analysis</span><span>Depth</span>
+        </div>
+      </div>
+      <div class="member-card fade-up tilt-card" data-delay="4">
+        <div class="member-card-glow"></div>
+        <div class="member-initials">AN</div>
+        <div class="member-name">Anish</div>
+        <div class="member-tenure">6 Months with the Agency</div>
+        <div class="member-role">Refinement Writer</div>
+        <p class="member-bio">Anish specialises in the art of refinement — taking solid drafts and elevating them through nuanced language and precise, surgical revision.</p>
+        <div class="member-tags">
+          <span>Refinement</span><span>Language</span><span>Precision</span>
+        </div>
+      </div>
+      <div class="member-card fade-up tilt-card" data-delay="5">
+        <div class="member-card-glow"></div>
+        <div class="member-initials">BG</div>
+        <div class="member-name">Bhagwita</div>
+        <div class="member-tenure">Fresher · New Talent</div>
+        <div class="member-role">Writer</div>
+        <p class="member-bio">Bhagwita brings fresh perspective and creative enthusiasm to the team, developing her craft under the mentorship of the agency's senior editors.</p>
+        <div class="member-tags">
+          <span>Creativity</span><span>Fresh Eye</span><span>Growth</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process" class="section dark-alt">
+  <div class="container">
+    <div class="section-header">
+      <span class="label fade-up">06 &nbsp;·&nbsp; How We Work</span>
+      <h2 class="split-heading fade-up">Our Five-Stage<br>Editorial Process</h2>
+    </div>
+    <div class="process-grid fade-up">
+      <div class="process-step" data-step="0">
+        <div class="process-step-num">01</div>
+        <div class="process-step-content">
+          <div class="process-dot"><div class="process-dot-ring"></div></div>
+          <h3 class="process-step-title">Discovery &amp; Brief</h3>
+          <p class="process-step-desc">We begin by listening — understanding your brand, audience, objectives, and tone before a single word is written.</p>
+        </div>
+        <div class="process-connector"></div>
+      </div>
+      <div class="process-step" data-step="1">
+        <div class="process-step-num">02</div>
+        <div class="process-step-content">
+          <div class="process-dot"><div class="process-dot-ring"></div></div>
+          <h3 class="process-step-title">Research &amp; Writing</h3>
+          <p class="process-step-desc">Deep research informs every draft. Our writers craft content that is accurate, original, and strategically aligned with your goals.</p>
+        </div>
+        <div class="process-connector"></div>
+      </div>
+      <div class="process-step" data-step="2">
+        <div class="process-step-num">03</div>
+        <div class="process-step-content">
+          <div class="process-dot"><div class="process-dot-ring"></div></div>
+          <h3 class="process-step-title">Editorial Review</h3>
+          <p class="process-step-desc">Senior editors assess structure, clarity, tone, and impact — ensuring every piece meets our uncompromising quality benchmark.</p>
+        </div>
+        <div class="process-connector"></div>
+      </div>
+      <div class="process-step" data-step="3">
+        <div class="process-step-num">04</div>
+        <div class="process-step-content">
+          <div class="process-dot"><div class="process-dot-ring"></div></div>
+          <h3 class="process-step-title">Refinement &amp; Polish</h3>
+          <p class="process-step-desc">Word-level precision, rhythm, and voice are perfected until the piece reads with effortless authority and unmistakable character.</p>
+        </div>
+        <div class="process-connector"></div>
+      </div>
+      <div class="process-step" data-step="4">
+        <div class="process-step-num">05</div>
+        <div class="process-step-content">
+          <div class="process-dot"><div class="process-dot-ring"></div></div>
+          <h3 class="process-step-title">Delivery &amp; Delight</h3>
+          <p class="process-step-desc">Your content arrives on time, in your preferred format, ready to publish — and reliably exceeds every expectation you set.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<section id="cta-band">
+  <div class="cta-orb cta-orb-1"></div>
+  <div class="cta-orb cta-orb-2"></div>
+  <div class="container">
+    <div class="cta-inner fade-up">
+      <div class="cta-deco-top"></div>
+      <span class="label">Ready When You Are</span>
+      <h2 class="cta-headline">Ready to Elevate<br><em>Your Brand?</em></h2>
+      <p class="cta-sub">Let's Build Something Extraordinary Together.</p>
+      <a href="mailto:elenawrite04@gmail.com" class="cta-email magnetic">elenawrite04@gmail.com</a>
+      <div class="cta-buttons">
+        <a href="mailto:elenawrite04@gmail.com" class="btn-primary magnetic">
+          <span class="btn-text">Start a Conversation</span>
+          <span class="btn-arrow">→</span>
+        </a>
+      </div>
+      <div class="cta-deco-bottom"></div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand-block">
+        <div class="footer-brand-logo-wrap">
+          <img src="logo.png" alt="E. Trenchburg Writes" class="footer-logo">
+          <span class="footer-brand">E. Trenchburg Writes</span>
+        </div>
+        <p class="footer-tag">Content Writing &amp; Editorial Agency &nbsp;·&nbsp; Est. 2024</p>
+      </div>
+      <div class="footer-links-block">
+        <a href="#story">Story</a>
+        <a href="#services">Services</a>
+        <a href="#team">Team</a>
+        <a href="#process">Process</a>
+        <a href="mailto:elenawrite04@gmail.com">Contact</a>
+      </div>
+    </div>
+    <div class="footer-divider"></div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2024 E. Trenchburg Writes. All rights reserved.</p>
+      <p class="footer-craft">Crafted with purpose &amp; precision.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
